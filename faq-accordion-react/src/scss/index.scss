@@ -1,0 +1,141 @@
+@import "utilities";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background-gradient;
+  font-size: 14px;
+  font-family: $font-family;
+  color: $primary-text-color;
+  position: relative;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: $font-size * 3;
+  margin: 2em auto 1em;
+  text-align: center;
+}
+
+hr {
+  color: $divider-color;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  background-color: $color-white;
+  border-radius: 2rem;
+  min-height: 90vh;
+  margin: 20rem 1rem;
+}
+
+.background-pattern {
+  width: 70%;
+  position: absolute;
+  top: -28%;
+  right: 0;
+  transform: translateX(-25%);
+}
+
+.woman-desktop {
+  position: absolute;
+  top: -12%;
+  left: 12%;
+  width: 70%;
+}
+
+.box-svg {
+  margin-top: -20%;
+  z-index: 1;
+}
+
+.faq-sec {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.p-question {
+  margin: 20px 0;
+  cursor: pointer;
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.p-ans {
+  margin: 0.4rem 0;
+  line-height: 1rem;
+  font-size: $font-size;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $color-white;
+  position: absolute;
+  top: 110%;
+  left: 10%;
+}
+
+.attribution a {
+  color: $color-white;
+  &:hover {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    text-align: left;
+  }
+  .container {
+    position: relative;
+    overflow: hidden;
+    margin: 7.5rem 15rem;
+    min-height: 70vh;
+  }
+
+  .flex-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+  }
+
+  .background-pattern {
+    margin: 0;
+    width: 80%;
+    min-height: 50vh;
+    position: absolute;
+    left: -20%;
+    top: -35%;
+  }
+
+  .woman-desktop {
+    width: auto;
+    position: absolute;
+    left: -10%;
+    top: 5%;
+  }
+  .box-svg {
+    position: fixed;
+    margin-top: 11%;
+    margin-left: -8.4%;
+  }
+  .attribution {
+    left: 40%;
+  }
+}
