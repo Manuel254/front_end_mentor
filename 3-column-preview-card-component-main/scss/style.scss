@@ -1,0 +1,84 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $font-size;
+    font-family: $font-family-lexend;
+    line-height: 1.7em;
+    background-color: $light;
+}
+
+.container {
+    margin-inline: auto;
+    width: 90%;
+}
+
+// Utilities
+@import 'utilities';
+
+.card {
+    padding: 3rem;
+
+    &-1 {
+        background-color: $orange;
+    }
+
+    &-2 {
+        background-color: $dark-cyan;
+    }
+
+    &-3 {
+        background-color: $very-dark-cyan;
+    }
+}
+
+p {
+    color: $par;
+}
+
+.btn {
+    border: 1px solid $light;
+    border-radius: 2rem;
+    padding: .7em 1.7em;
+    background-color: $light;
+
+    &-1 {
+        color: $orange;
+    }
+
+    &-2 {
+        color: $dark-cyan;
+    }
+
+    &-3 {
+        color: $very-dark-cyan;
+    }
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: $light;
+}
+
+// Footer
+.attribution { 
+    font-size: 11px; text-align: center;
+
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+} 
+
+// Desktop
+@media (min-width: 1440px)  {
+    .container {
+        margin-top: 8%;
+        width: 60%;
+        display: flex;
+        flex-basis: 100%;
+    }
+}
+
